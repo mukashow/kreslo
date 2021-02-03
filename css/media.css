@@ -1,0 +1,539 @@
+@media (max-width: 1920px) {
+
+    .complaints__grid-item{
+        max-width: 246px;
+        height: auto;
+        max-height: 246px;
+    }
+}
+
+@media (max-width: 1860px) {
+
+    .products__slide:not(:first-child){
+        margin-left: 80px;
+    }
+
+    .get{
+        padding: 0 77px;
+    }
+
+    .get__item-info{
+        padding: 15px 36px 26px 36px;
+    }
+
+    .get__item-text:before{
+        left: -18px;
+    }
+
+    .get__item-text{
+        font-size: 18px;
+    }
+
+    .present{
+        margin-bottom: 80px;
+    }
+
+    .reviews{
+        padding: 0 92px;
+    }
+
+    .reviews__slide{
+        padding: 17px 17px 30px 17px;
+        min-height: 360px;
+        height: auto;
+        margin-right: 17px;
+        margin-bottom: 100px;
+    }
+
+    .reviews__slider .prev,
+    .reviews__slider .next{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .reviews__slider .next{
+        right: -61px;
+    }
+
+    .reviews__slider .prev{
+        left: -61px;
+    }
+
+    .reviews__author{
+        margin-bottom: 30px;
+    }
+
+    .reviews__img{
+        max-width: 85px;
+    }
+
+    .reviews__name{
+        font-size: 15px;
+    }
+
+    .reviews__proff{
+        font-size: 12px;
+    }
+
+    .reviews__star{
+        max-width: 15px;
+    }
+
+    .reviews__review{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 1750px) {
+
+    .products__slider .next{
+        left: 67.2%;
+    }
+
+    .complaints__pain{
+        margin-left: 150px;
+    }
+
+    .complaints__info{
+        right: 150px;
+    }
+
+    .get__flex{
+        padding: 17px;
+    }
+
+    .get__item:not(:last-child){
+        margin-right: 17px;
+    }
+
+    .get__item-title{
+        font-size: 20px;
+    }
+
+    .advantage{
+        padding: 0 150px;
+    }
+
+    .advantage__flex__item:not(:last-child){
+        margin-right: 35px;
+    }
+
+    .advantage__flex__item{
+        padding: 60px 20px 0 20px;
+    }
+
+    .advantage__flex-title{
+        font-size: 22px;
+    }
+
+    .advantage__text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .next,
+    .prev{
+        max-width: 50px;
+    }
+
+    .intro{
+        margin-bottom: 80px;
+    }
+
+    .intro__text{
+        left: 150px;
+    }
+
+    .intro__title-top{
+        font-size: 30px;
+    }
+
+    .intro__title-middle{
+        font-size: 140px;
+    }
+
+    .intro__title-bottom{
+        font-size: 46px;
+    }
+
+    .complaints{
+        padding: 44px 0;
+    }
+
+    .complaints__pain{
+        padding: 17px;
+    }
+
+    .complaints__pain-inner:first-child{
+        margin-bottom: 20px;
+    }
+
+    .complaints__grid{
+        gap: 12px;
+    }
+
+    .complaints__grid-pic{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .complaints__pain-title{
+        font-size: 31px;
+        line-height: 42px;
+        margin-bottom: 14px;
+    }
+
+    .complaints__grid-ttl{
+        font-size: 12px;
+    }
+
+    .complaints__info-title{
+        font-size: 31px;
+    }
+
+    .complaints__text{
+        font-size: 14px;
+    }
+
+    .complaints__info{
+        width: auto;
+        max-width: 324px;
+    }
+
+    .products__slider{
+        margin-bottom: 128px !important;
+    }
+
+    .products__slider::after{
+        height: calc(100% + 88px);
+        width: 72.62%;
+    }
+
+    .products__slider .next{
+        left: 66%;
+    }
+
+    .products__slide:first-child{
+        margin-left: 90px;
+    }
+
+    .products__old-price::after{
+        width: 46px;
+    }
+
+    .products__slide-title{
+        font-size: 37px;
+        padding-bottom: 8px;
+        margin-bottom: 4px;
+        max-width: 350px;
+    }
+
+    .product__slide-inner{
+        padding: 54px 25px 25px 25px;
+    }
+
+    .products__abilities-inner{
+        font-size: 11px;
+    }
+
+    .products__price{
+        font-size: 19px;
+        margin-bottom: 1px;
+    }
+
+    .products__old-price{
+        font-size: 14px;
+    }
+
+    .products__btn{
+        font-size: 11px;
+        padding: 12px 22px;
+        border-radius: 5px;
+    }
+
+    .products__slide-img{
+        width: 250px;
+        margin-top: 10px;
+    }
+
+    .products__abilities{
+        max-width: 350px;
+    }
+
+    .get__wrapper{
+        margin-bottom: 128px;
+    }
+
+    .get::after{
+        height: calc(100% + 88px);
+    }
+
+    .get__item-title{
+        font-size: 17px;
+        margin-bottom: 16px;
+    }
+
+    .get__item-text{
+        font-size: 14px;
+    }
+
+    .get__item-text:first-of-type{
+        margin-bottom: 10px;
+    }
+
+    .advantage__flex{
+        padding: 17px;
+    }
+
+    .advantage::after{
+        height: calc(100% + 88px);
+    }
+
+    .advantage__flex__item{
+        height: auto;
+        min-height: 256px;
+        padding-bottom: 25px;
+    }
+
+    .advantage__icon{
+        margin-bottom: 20px;
+        max-height: 35px;
+    }
+
+    .advantage__flex-title{
+        font-size: 17px;
+    }
+
+    .advantage__text{
+        font-size: 13px;
+    }
+
+    .present__inner{
+        left: 131px;
+    }
+
+    .present__text{
+        font-size: 46px;
+        line-height: 63px;
+        max-width: 720px;
+    }
+
+    .present__btn{
+        padding: 12px 0;
+        max-width: 130px;
+        font-size: 11px;
+        border-radius: 11px;
+    }
+
+    .footer{
+        height: 182px;
+        padding: 0 92px;
+    }
+
+    .footer__logo-pic{
+        max-height: 78px;
+    }
+
+    .footer__logo{
+        margin-right: 27px;
+    }
+
+    .header__nav-item:not(:last-child){
+        margin-right: 22px;
+    }
+
+    .footer__nav-link{
+        font-size: 19px;
+    }
+
+    .footer__contact-ttl{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .footer__link{
+        font-size: 13px;
+    }
+
+    .footer__link-pic{
+        max-height: 15px;
+        margin-right: 8px;
+    }
+
+    .footer__contact:not(:last-of-type){
+        margin-right: 60px;
+    }
+
+    .footer__link::after{
+        bottom: -5px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .section__title{
+        font-size: 31px;
+    }
+
+    .header{
+        height: 81px;
+    }
+
+    .header__inner{
+        margin-left: 93px;
+    }
+
+    .header__link{
+        font-size: 12px;
+    }
+
+    .header__logo{
+        margin-right: 56px;
+    }
+
+    .header__logo-pic{
+        max-height: 70px;
+    }
+
+    .intro{
+        height: calc(100vh - 81px);
+    }
+
+    .intro__text{
+        left: 132px;
+    }
+
+    .intro__title-top{
+        font-size: 25px;
+    }
+
+    .intro__title-middle{
+        font-size: 117px;
+        line-height: 134px;
+    }
+
+    .intro__title-bottom{
+        font-size: 39px;
+        margin-bottom: 26px;
+    }
+
+    .intro__button{
+        font-size: 13px;
+        max-width: 157px;
+        padding: 13px 0;
+        color: white;
+    }
+
+    .complaints__grid-item{
+        max-height: 175px;
+    }
+
+    .complaints__grid-pic{
+        margin-top: 25px;
+    }
+
+    .complaints__grid-ttl{
+        margin: 14px 0 14px 0;
+    }
+
+    .get__item-text:last-of-type{
+        margin: 0;
+    }
+
+    .consult{
+        padding: 0 92px;
+        margin-bottom: 100px;
+    }
+
+    .consult__inner{
+        padding: 92px;
+    }
+
+    .consult__form{
+        padding: 28px 41px;
+        max-width: 370px;
+    }
+
+    .consult__title{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .consult__text{
+        font-size: 12px;
+        margin-bottom: 36px;
+    }
+
+    .consult__input{
+        height: 31px;
+        padding: 0 14px;
+        margin-bottom: 11px;
+    }
+
+    .consult__input::placeholder{
+        font-size: 11px;
+    }
+
+    .consult__submit{
+        height: 31px;
+        font-size: 11px;
+        margin-top: 22px;
+    }
+
+    .footer__nav-link{
+        font-size: 19px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .complaints__pain{
+        margin-left: 50px;
+    }
+
+    .get{
+        padding: 0 25px;
+    }
+
+    .advantage{
+        padding: 0 25px;
+    }
+
+    .reviews{
+        padding: 0 50px;
+    }
+
+    .reviews__slider .next{
+        right: -45px;
+    }
+
+    .reviews__slider .prev{
+        left: -45px;
+    }
+
+    .consult{
+        padding: 0 25px;
+    }
+
+    .consult__inner{
+        padding: 80px;
+    }
+
+    .footer{
+        padding: 0 40px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .header__inner{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {}

@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                <img class="header__logo-pic" src="img/intro/logo.png" alt="">
+            </a>
+            <ul class="header__nav">
+                <li class="header__nav-item">
+                    <a href="#products" class="header__link">
+                        Наши товары
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#footer" class="header__link">
+                        Контакты
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#leave__request" rel="modal:open" class="header__link">
+                        Заказать
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="leave__request" class="modal">
+            <a href="#" rel="modal:close" class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L12 12L2 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 22L12 12L2 22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <h5 class="modal__title">
+                Оставьте заявку
+            </h5>
+            <p class="modal__subtitle">
+                И наш специалист свяжется с Вами
+            </p>
+            <form action="">
+                <input type="text" id="modal__name" class="consult__input" placeholder="Ваше имя" required>
+                <input type="tel" id="modal__tel" class="consult__input" placeholder="Ваш номер" required>
+                <a href="#request__sent" rel="modal:open">
+                    <input type="submit" id="modal__submit" class="consult__submit btn" value="Оставить заявку">
+                </a>
+            </form>
+        </div>
+        <div id="request__sent" class="modal">
+            <a href="#" rel="modal:close" class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L12 12L2 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 22L12 12L2 22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <h5 class="modal__title">
+                Ваша заявка принята,
+                мы с Вами свяжемся.
+            </h5>
+            <img src="img/footer/check.png" alt="" class="modal__pic">
+        </div>
+    </header>
+
+    <main class="content">
+
+        <div id="modal__country" class="modal__country">
+            <h3 class="modal__country-ttl">
+                Откуда вы?
+            </h3>
+            <div class="modal__countries">
+                <div class="modal__countries-item">
+                    <img src="img/country/kyrgyzstan.png" alt="" class="modal__countries-pic">
+                </div>
+                <div class="modal__countries-item">
+                    <img src="img/country/russia.png" alt="" class="modal__countries-pic">
+                </div>
+                <div class="modal__countries-item">
+                    <img src="img/country/kazakhstan.png" alt="" class="modal__countries-pic">
+                </div>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="intro__text">
+                <div class="intro__title">
+                    <p class="intro__title-top">
+                        Массажные кресла
+                    </p>
+                    <h1 class="intro__title-middle">
+                        HADIYA
+                    </h1>
+                    <p class="intro__title-bottom">
+                        Почувствуй невесомость
+                    </p>
+                </div>
+                <a href="#leave__request" rel="modal:open" class="intro__button btn">
+                    Сделать заказ
+                </a>
+            </div>
+            <img src="img/intro/intro__chair.png" alt="" class="intro__img">
+        </div>
+
+        <section class="complaints">
+                <div class="complaints__pain">
+                    <div class="complaints__pain-inner">
+                        <h3 class="complaints__pain-title">
+                            Если Вас беспокоит:
+                        </h3>
+                        <div class="complaints__grid">
+                            <div class="complaints__grid-item">
+                                <img src="img/pain/brain.png" alt="" class="complaints__grid-pic">
+                                <p class="complaints__grid-ttl">
+                                    Боль в шее
+                                </p>
+                            </div>
+                            <div class="complaints__grid-item">
+                                <img src="img/pain/back.png" alt="" class="complaints__grid-pic">
+                                <p class="complaints__grid-ttl">
+                                    Боль в спине
+                                </p>
+                            </div>
+                            <div class="complaints__grid-item">
+                                <img src="img/pain/leg.png" alt="" class="complaints__grid-pic">
+                                <p class="complaints__grid-ttl">
+                                    Боль в ногах
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complaints__pain-inner">
+                        <h3 class="complaints__pain-title">
+                            Или же  вы:
+                        </h3>
+                        <div class="complaints__grid">
+                            <div class="complaints__grid-item">
+                                <img src="img/pain/driver.png" alt="" class="complaints__grid-pic">
+                                <p class="complaints__grid-ttl">
+                                    Много сидит<br>
+                                    за рулем
+                                </p>
+                            </div>
+                            <div class="complaints__grid-item">
+                                <img src="img/pain/worker.png" alt="" class="complaints__grid-pic">
+                                <p class="complaints__grid-ttl">
+                                    Много сидит<br>
+                                    за компьютером
+                                </p>
+                            </div>
+                            <div class="complaints__grid-item">
+                                <img src="img/pain/dizziness.png" alt="" class="complaints__grid-pic">
+                                <p class="complaints__grid-ttl">
+                                    Чувствуете усталость<br>
+                                    после работы
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="complaints__info">
+                    <h3 class="complaints__info-title">
+                        Если вы сказали ДА
+                    </h3>
+                    <p class="complaints__text">
+                        То хотим порекомендовать Вам наше <span class="complaints__text-orange">кресло</span>,
+                        которое <span class="complaints__text-orange">навсегда</span> избавит Вас от боли в шее,
+                        спине и ногах.<br>
+                        Поможет <span class="complaints__text-orange">расслабиться</span> после утомительного
+                        рабочего дня.
+                    </p>
+                </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2 class="section__title products__title">
+                Наши товары
+            </h2>
+            <div class="products__slider">
+                <div class="products__slide">
+                    <div class="product__slide-inner">
+                        <div class="products__slide-img">
+                            <img src="img/products/chair1.png" alt="" class="products__slide-pic">
+                        </div>
+                        <div class="products__slide-info">
+                            <h3 class="products__slide-title">
+                                Hadiya Lion
+                            </h3>
+                            <div class="products__abilities">
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж спины
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж шеи и плеч
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж рук
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Подогрев поясницы
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж головы
+                                    </p>
+                                    <p class="products__ability">
+                                        Монитор для управления
+                                    </p>
+                                </div>
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж век
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж стоп
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулеровка скорости массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Несколько режимов массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулироваемая высота для ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Беспровадная Bluetooth колонка
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products__buy-flex">
+                                <div class="products__prices">
+                                    <p class="products__price">
+                                        $ 1500
+                                    </p>
+                                    <p class="products__old-price">
+                                        $ 1800
+                                    </p>
+                                </div>
+                                <a href="#leave__request" rel="modal:open" class="products__btn btn">
+                                    Сделать заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__slide">
+                    <div class="product__slide-inner">
+                        <div class="products__slide-img">
+                            <img src="img/products/chair1.png" alt="" class="products__slide-pic">
+                        </div>
+                        <div class="products__slide-info">
+                            <h3 class="products__slide-title">
+                                Hadiya Lion
+                            </h3>
+                            <div class="products__abilities">
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж спины
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж шеи и плеч
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж рук
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Подогрев поясницы
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж головы
+                                    </p>
+                                    <p class="products__ability">
+                                        Монитор для управления
+                                    </p>
+                                </div>
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж век
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж стоп
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулеровка скорости массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Несколько режимов массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулироваемая высота для ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Беспровадная Bluetooth колонка
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products__buy-flex">
+                                <div class="products__prices">
+                                    <p class="products__price">
+                                        $ 1500
+                                    </p>
+                                    <p class="products__old-price">
+                                        $ 1800
+                                    </p>
+                                </div>
+                                <a href="#leave__request" rel="modal:open" class="products__btn btn">
+                                    Сделать заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__slide">
+                    <div class="product__slide-inner">
+                        <div class="products__slide-img">
+                            <img src="img/products/chair1.png" alt="" class="products__slide-pic">
+                        </div>
+                        <div class="products__slide-info">
+                            <h3 class="products__slide-title">
+                                Hadiya Lion
+                            </h3>
+                            <div class="products__abilities">
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж спины
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж шеи и плеч
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж рук
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Подогрев поясницы
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж головы
+                                    </p>
+                                    <p class="products__ability">
+                                        Монитор для управления
+                                    </p>
+                                </div>
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж век
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж стоп
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулеровка скорости массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Несколько режимов массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулироваемая высота для ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Беспровадная Bluetooth колонка
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products__buy-flex">
+                                <div class="products__prices">
+                                    <p class="products__price">
+                                        $ 1500
+                                    </p>
+                                    <p class="products__old-price">
+                                        $ 1800
+                                    </p>
+                                </div>
+                                <a href="#leave__request" rel="modal:open" class="products__btn btn">
+                                    Сделать заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__slide">
+                    <div class="product__slide-inner">
+                        <div class="products__slide-img">
+                            <img src="img/products/chair1.png" alt="" class="products__slide-pic">
+                        </div>
+                        <div class="products__slide-info">
+                            <h3 class="products__slide-title">
+                                Hadiya Lion
+                            </h3>
+                            <div class="products__abilities">
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж спины
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж шеи и плеч
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж рук
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Подогрев поясницы
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж головы
+                                    </p>
+                                    <p class="products__ability">
+                                        Монитор для управления
+                                    </p>
+                                </div>
+                                <div class="products__abilities-inner">
+                                    <p class="products__ability">
+                                        Массаж век
+                                    </p>
+                                    <p class="products__ability">
+                                        Массаж стоп
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулеровка скорости массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Несколько режимов массажа
+                                    </p>
+                                    <p class="products__ability">
+                                        Регулироваемая высота для ног
+                                    </p>
+                                    <p class="products__ability">
+                                        Беспровадная Bluetooth колонка
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products__buy-flex">
+                                <div class="products__prices">
+                                    <p class="products__price">
+                                        $ 1500
+                                    </p>
+                                    <p class="products__old-price">
+                                        $ 1800
+                                    </p>
+                                </div>
+                                <a href="#leave__request" rel="modal:open" class="products__btn btn">
+                                    Сделать заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="get__wrapper">
+            <h2 class="get__title section__title">
+                Что Вы получите приобретая наше кресло
+            </h2>
+            <div class="get">
+                <div class="get__flex">
+                    <div class="get__item">
+                        <div class="get__item-img">
+                            <img src="img/get/get1.png" alt="" class="get__item-pic">
+                        </div>
+                        <div class="get__item-info">
+                            <h4 class="get__item-title">
+                                Станешь бодрым  и активным
+                            </h4>
+                            <p class="get__item-text">
+                                Массаж снимает нервное напряжение, стресс, бессонницу, тревожность, усталость и напряженные мышцы – все эти проблемы легко решаются всего за несколько сеансов.
+                            </p>
+                            <p class="get__item-text">
+                                Даже полу часовая процедура массажного кресла поможет скинуть оковы напряжения, успокоиться и перезапустить организм как на физическом, так и на эмоциональном уровне.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="get__item">
+                        <div class="get__item-img">
+                            <img src="img/get/get2.png" alt="" class="get__item-pic">
+                        </div>
+                        <div class="get__item-info">
+                            <h4 class="get__item-title">
+                                Избавишься от головных болей
+                            </h4>
+                            <p class="get__item-text">
+                                Массаж способствует расширению кровеносных сосудов,  это нормализует кровообращение и избавляет от головной боли.
+                            </p>
+                            <p class="get__item-text">
+                                Принцип действия заключается в механической стимуляции кожи, мышц и сосудов головы и шеи. Продолжительность сеанса составляет примерно 20 минут.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="get__item">
+                        <div class="get__item-img">
+                            <img src="img/get/get3.png" alt="" class="get__item-pic">
+                        </div>
+                        <div class="get__item-info">
+                            <h4 class="get__item-title">
+                                Почувствуешь легкость
+                            </h4>
+                            <p class="get__item-text">
+                                С помощью массажного кресла <span class="complaints__text-orange">HADIYA</span> вы повысите свой жизненный тонус, избавитесь от: болевых ощущений в пояснице, спине и шейном отделе.
+                            </p>
+                            <p class="get__item-text">
+                                Получите глубокое разминание всех мышц, снимите мышечное напряжение после физической активности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantage__wrapper">
+            <h2 class="advantage__title section__title">
+                Почему вам стоит выбрать именно нас
+            </h2>
+            <div class="advantage">
+                <div class="advantage__flex">
+                    <div class="advantage__flex__item">
+                        <img src="img/advantage/advantage1.png" alt="" class="advantage__icon">
+                        <div class="advantage__flex-title">
+                            Доставим ваше кресло
+                        </div>
+                        <div class="advantage__text">
+                            Доставка по Бишкеку бесплатно<br>
+                            Доставка в Казахстан и Россию
+                        </div>
+                    </div>
+                    <div class="advantage__flex__item">
+                        <img src="img/advantage/advantage2.png" alt="" class="advantage__icon">
+                        <div class="advantage__flex-title">
+                            С нами удобно
+                        </div>
+                        <div class="advantage__text">
+                            Мы работаем ради вашего удобства
+                            в выходные и праздники
+                        </div>
+                    </div>
+                    <div class="advantage__flex__item">
+                        <img src="img/advantage/advantage3.png" alt="" class="advantage__icon">
+                        <div class="advantage__flex-title">
+                            Сервисное обслуживание
+                        </div>
+                        <div class="advantage__text">
+                            В случае возникновения неисправностей<br>
+                            Вам помогут наши<br>
+                            квалифицированные- специалисты
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="present">
+            <div id="present__modal" class="modal">
+                <h5 class="modal__title">
+                    Отличное решение!
+                </h5>
+                <p class="modal__subtitle">
+                    Оставьте Ваши данные и наш специалист свяжется с Вами
+                </p>
+                <form action="">
+                    <input type="text" id="present__modal-name" class="consult__input" placeholder="Ваше имя" required>
+                    <input type="tel" id="present__modal-tel" class="consult__input" placeholder="Ваш номер" required>
+                    <a href="#request__sent" rel="modal:open">
+                        <input type="submit" id="present__modal-submit" class="consult__submit btn" value="Оставить заявку">
+                    </a>
+                </form>
+            </div>
+            <div class="present__inner">
+                <p class="present__text">
+                    массажное кресло<br>
+                    HADIYA - желанный подарок для людей всех возрастов
+                </p>
+                <a href="#present__modal" rel="modal:open" class="present__btn btn">
+                    Подарить
+                </a>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2 class="reviews__title section__title">
+                Что про нас говорят покупатели
+            </h2>
+            <div class="reviews__slider">
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews4.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Дмитрий, 37 года
+                            </h5>
+                            <p class="reviews__proff">
+                                Офисный служащий
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        У моего брата со временем возникли трудности с позвоночником. Многократные походы по медицинским работникам или же массажистам теснее его измучили и нравственно и материально. Про это массажном кресле рассказал один мой сотрудник, некоторое время он тоже маялся как он. В прошлем у него были сильные боли и   недомогания,пока ему повезло и он наткнулься на этот web-сайт и извабился от боли и недомаганий, а все спасибо данному креслу.
+                    </p>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews1.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Кирилл , 50 лет
+                            </h5>
+                            <p class="reviews__proff">
+                                Строитель
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        Мы с супругой долго спорили, нужно ли нам покупать массажное кресло, как ни странно она была против такой покупки. Я все таки настоял и кресло мы купили, модель достаточно недорогая, но функции свои исполняет на все десять из десяти балов. Супруга сейчас каждый день в свободное время им пользуется, довольна безумно, а я с самого начала говорил вещь очень нужная и полезная. Сам когда со спиной проблемы или после работы устаю, спасаюсь только в этом кресле. Спасибо этому сайту за кресло
+                    </p>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews3.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Давид, 56 лет
+                            </h5>
+                            <p class="reviews__proff">
+                                Пенсионер
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        Мучался от болей в спине и однажды мой друг посоветовал мне купить массажное кресло. Я долгое время сомневался. Но спина все продолжала болеть и я наткнулся на данный веб-сайт, где просмотрев ассортимент и все-таки решил купить кресло.
+                        Я не возлагал особо много надежд, с долей скептицизма я впервые сел в кресло, давно я не чувствовал такого облегчения. И сейчас я очень воодушевленный пишу данный отзыв дабы выразить благодарность за отсутствие боли в спине
+                    </p>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews2.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Мириам, 32 года
+                            </h5>
+                            <p class="reviews__proff">
+                                Продовец
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        Весной у меня день рождения и я решила сама сделать себе подарок в виде массажного кресла. Выбор этой модели объясняется тем, что она просто потрясающе снимает усталость и придает дополнительные силы. Кресло установила в своем рабочем кабинете и теперь регулярно пользуюсь в обеденный перерыв. Всем кто испытывает усталость на рабочем месте и имеет возможность приобрести массажное кресло, настоятельно рекомендую эту модель. Не пожалеете
+                    </p>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews4.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Дмитрий, 37 года
+                            </h5>
+                            <p class="reviews__proff">
+                                Офисный служащий
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        У моего брата со временем возникли трудности с позвоночником. Многократные походы по медицинским работникам или же массажистам теснее его измучили и нравственно и материально. Про это массажном кресле рассказал один мой сотрудник, некоторое время он тоже маялся как он. В прошлем у него были сильные боли и   недомогания,пока ему повезло и он наткнулься на этот web-сайт и извабился от боли и недомаганий, а все спасибо данному креслу.
+                    </p>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews1.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Кирилл , 50 лет
+                            </h5>
+                            <p class="reviews__proff">
+                                Строитель
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        Мы с супругой долго спорили, нужно ли нам покупать массажное кресло, как ни странно она была против такой покупки. Я все таки настоял и кресло мы купили, модель достаточно недорогая, но функции свои исполняет на все десять из десяти балов. Супруга сейчас каждый день в свободное время им пользуется, довольна безумно, а я с самого начала говорил вещь очень нужная и полезная. Сам когда со спиной проблемы или после работы устаю, спасаюсь только в этом кресле. Спасибо этому сайту за кресло
+                    </p>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews3.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Давид, 56 лет
+                            </h5>
+                            <p class="reviews__proff">
+                                Пенсионер
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        Мучался от болей в спине и однажды мой друг посоветовал мне купить массажное кресло. Я долгое время сомневался. Но спина все продолжала болеть и я наткнулся на данный веб-сайт, где просмотрев ассортимент и все-таки решил купить кресло.
+                        Я не возлагал особо много надежд, с долей скептицизма я впервые сел в кресло, давно я не чувствовал такого облегчения. И сейчас я очень воодушевленный пишу данный отзыв дабы выразить благодарность за отсутствие боли в спине
+                    </p>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__author">
+                        <img src="img/reviews/reviews2.png" alt="" class="reviews__img">
+                        <div class="reviews__person">
+                            <h5 class="reviews__name">
+                                Мириам, 32 года
+                            </h5>
+                            <p class="reviews__proff">
+                                Продовец
+                            </p>
+                            <div class="reviews__stars">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">
+                                <img src="img/reviews/star.png" alt="" class="reviews__star">                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews__review">
+                        Весной у меня день рождения и я решила сама сделать себе подарок в виде массажного кресла. Выбор этой модели объясняется тем, что она просто потрясающе снимает усталость и придает дополнительные силы. Кресло установила в своем рабочем кабинете и теперь регулярно пользуюсь в обеденный перерыв. Всем кто испытывает усталость на рабочем месте и имеет возможность приобрести массажное кресло, настоятельно рекомендую эту модель. Не пожалеете
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="consult">
+            <div class="consult__inner">
+                <form action="" class="consult__form">
+                    <h5 class="consult__title">
+                        Если у Вас остались вопросы или хотите заказать консультацию
+                    </h5>
+                    <p class="consult__text">
+                        Оставте ваши данные и наш специалист свяжется с Вами в течении 5 минут
+                    </p>
+                    <input type="text" id="consult__name" class="consult__input" placeholder="Ваше имя" required>
+                    <input type="tel" id="consult__tel" class="consult__input" placeholder="Ваш номер" required>
+                    <input type="submit" id="consult__submit" class="consult__submit btn" value="Оставить заявку">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="img/intro/logo.png" alt="" class="footer__logo-pic">
+            </div>
+            <ul class="footer__nav header__nav">
+                <li class="footer__nav-item header__nav-item">
+                    <a href="#" class="footer__nav-link header__link">
+                        Наши товары
+                    </a>
+                </li>
+                <li class="footer__nav-item header__nav-item">
+                    <a href="#leave__request" rel="modal:open" class="footer__nav-link header__link">
+                        Заказать
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__inner">
+            <div class="footer__contact">
+                <h6 class="footer__contact-ttl">
+                    Наш номер:
+                </h6>
+                <a href="tel:+996 (505) 90 56 45" class="footer__link">
+                    <img src="img/footer/tel.png" alt="" class="footer__link-pic">
+                    <span>+996 (505) 90 56 45</span>
+                </a>
+            </div>
+            <div class="footer__contact">
+                <h6 class="footer__contact-ttl">
+                    Наш адрес:
+                </h6>
+                <a href="#" class="footer__link">
+                    <img src="img/footer/tel.png" alt="" class="footer__link-pic">
+                    <span>г. Бишкек, ул.Байтик Баатыра 34/2</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-2.2.4-min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
